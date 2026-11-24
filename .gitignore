@@ -1,0 +1,12 @@
+# Dependencies
+node_modules
+
+# Production builds
+dist
+dist-ssr
+
+# Build info and local artifacts
+*.tsbuildinfo
+*.local
+.DS_Store
+Thumbs.db
