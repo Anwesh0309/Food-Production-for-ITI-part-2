@@ -11,6 +11,107 @@ const T = FOOD2_THEMES.market;
 interface Item { id: string; emoji: string; en: string; hi: string; fr: string; look: Bi2; smell: Bi2; touch: Bi2; texture: Bi2; use: Bi2; tint: string }
 const bi = (en: string, hi: string): Bi2 => ({ en, hi });
 
+function BlackPepperIcon({ size = 36 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 48 48" fill="none" className="inline-block drop-shadow-sm select-none">
+      <ellipse cx="24" cy="28" rx="20" ry="14" fill="#334155" opacity="0.15" />
+      <ellipse cx="24" cy="30" rx="19" ry="9" fill="#1e293b" />
+      <ellipse cx="24" cy="27" rx="17" ry="7" fill="#0f172a" />
+      <g stroke="#090d16" strokeWidth="0.5">
+        <circle cx="16" cy="25" r="4.2" fill="#262626" />
+        <circle cx="15.2" cy="23.8" r="1.2" fill="#52525b" opacity="0.7" />
+        <circle cx="23" cy="26" r="4.5" fill="#18181b" />
+        <circle cx="22" cy="24.5" r="1.3" fill="#71717a" opacity="0.8" />
+        <circle cx="31" cy="25" r="4" fill="#27272a" />
+        <circle cx="30" cy="23.8" r="1" fill="#71717a" opacity="0.6" />
+        <circle cx="19" cy="21" r="4.3" fill="#1c1917" />
+        <circle cx="18" cy="19.5" r="1.3" fill="#57534e" opacity="0.8" />
+        <circle cx="27" cy="21" r="4.6" fill="#18181b" />
+        <circle cx="25.8" cy="19.2" r="1.4" fill="#71717a" opacity="0.8" />
+        <circle cx="22" cy="16" r="4.5" fill="#262626" />
+        <circle cx="20.8" cy="14.5" r="1.4" fill="#a1a1aa" opacity="0.9" />
+        <circle cx="12" cy="27" r="3.2" fill="#27272a" />
+        <circle cx="35" cy="26" r="3.4" fill="#1c1917" />
+        <circle cx="26" cy="13" r="3.6" fill="#18181b" />
+        <circle cx="25.2" cy="11.8" r="1" fill="#71717a" opacity="0.7" />
+      </g>
+    </svg>
+  );
+}
+
+function TurmericIcon({ size = 36 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 48 48" fill="none" className="inline-block drop-shadow-sm select-none">
+      <ellipse cx="24" cy="36" rx="18" ry="7" fill="#78350f" opacity="0.2" />
+      <path d="M7 35 Q11 31 16 33 Q20 34 22 36 Q18 38 13 38 Q8 38 7 35 Z" fill="#b45309" stroke="#78350f" strokeWidth="0.8" />
+      <path d="M10 33 Q12 36 14 34" stroke="#d97706" strokeWidth="0.7" fill="none" />
+      <path d="M14 26 C14 36 34 36 34 26 Z" fill="#9a3412" stroke="#7c2d12" strokeWidth="1" />
+      <ellipse cx="24" cy="26" rx="10" ry="3" fill="#c2410c" />
+      <path d="M15 26 Q19 16 24 14 Q29 16 33 26 Z" fill="#eab308" />
+      <path d="M17 25 Q21 17 24 15 Q27 17 31 25 Z" fill="#facc15" />
+      <ellipse cx="24" cy="19" rx="4" ry="2.5" fill="#fde047" opacity="0.8" />
+      <circle cx="21" cy="21" r="0.7" fill="#ca8a04" />
+      <circle cx="26" cy="22" r="0.8" fill="#ca8a04" />
+      <circle cx="24" cy="17" r="0.6" fill="#fef08a" />
+      <circle cx="23" cy="24" r="0.7" fill="#ca8a04" />
+    </svg>
+  );
+}
+
+function CinnamonIcon({ size = 36 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 48 48" fill="none" className="inline-block drop-shadow-sm select-none">
+      <ellipse cx="24" cy="38" rx="16" ry="6" fill="#451a03" opacity="0.25" />
+      <g transform="rotate(-25 24 24)">
+        <rect x="18" y="10" width="8" height="28" rx="4" fill="#9a3412" stroke="#78350f" strokeWidth="0.8" />
+        <line x1="20" y1="12" x2="20" y2="36" stroke="#b45309" strokeWidth="0.8" />
+        <ellipse cx="22" cy="10" rx="4" ry="2" fill="#78350f" />
+        <ellipse cx="22" cy="10" rx="2.5" ry="1.2" fill="#451a03" />
+      </g>
+      <g transform="rotate(20 24 24)">
+        <rect x="20" y="8" width="9" height="30" rx="4.5" fill="#b45309" stroke="#78350f" strokeWidth="1" />
+        <line x1="23" y1="10" x2="23" y2="36" stroke="#d97706" strokeWidth="1" />
+        <line x1="26" y1="12" x2="26" y2="34" stroke="#78350f" strokeWidth="0.8" strokeDasharray="2 2" />
+        <ellipse cx="24.5" cy="8" rx="4.5" ry="2.2" fill="#9a3412" />
+        <ellipse cx="24.5" cy="8" rx="2.8" ry="1.4" fill="#451a03" />
+        <circle cx="24.5" cy="8" r="1" fill="#291205" />
+      </g>
+      <path d="M16 28 Q20 30 24 28" stroke="#d97706" strokeWidth="0.9" fill="none" />
+    </svg>
+  );
+}
+
+function CardamomIcon({ size = 36 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 48 48" fill="none" className="inline-block drop-shadow-sm select-none">
+      <ellipse cx="24" cy="38" rx="16" ry="6" fill="#14532d" opacity="0.2" />
+      <g transform="rotate(-25 18 26)">
+        <path d="M18 14 C13 20 13 28 18 34 C23 28 23 20 18 14 Z" fill="#65a30d" stroke="#3f6212" strokeWidth="1" />
+        <path d="M18 14 Q15 24 18 34" stroke="#84cc16" strokeWidth="0.9" fill="none" />
+        <path d="M18 14 Q21 24 18 34" stroke="#4d7c0f" strokeWidth="0.9" fill="none" />
+        <path d="M18 14 L18 11" stroke="#3f6212" strokeWidth="1.2" strokeLinecap="round" />
+        <path d="M18 34 L18 36" stroke="#3f6212" strokeWidth="1.2" strokeLinecap="round" />
+      </g>
+      <g transform="rotate(20 28 24)">
+        <path d="M28 12 C22 19 22 29 28 36 C34 29 34 19 28 12 Z" fill="#84cc16" stroke="#3f6212" strokeWidth="1" />
+        <path d="M28 12 Q25 24 28 36" stroke="#a3e635" strokeWidth="1.1" fill="none" />
+        <path d="M28 12 Q31 24 28 36" stroke="#4d7c0f" strokeWidth="0.9" fill="none" />
+        <path d="M28 12 L28 9" stroke="#3f6212" strokeWidth="1.2" strokeLinecap="round" />
+        <path d="M28 36 L28 38" stroke="#3f6212" strokeWidth="1.2" strokeLinecap="round" />
+      </g>
+    </svg>
+  );
+}
+
+function ItemVisual({ item, size = 'sm' }: { item: Item; size?: 'sm' | 'lg' }) {
+  const pixelSize = size === 'lg' ? 52 : 36;
+  if (item.fr === 'Poivre noir') return <BlackPepperIcon size={pixelSize} />;
+  if (item.fr === 'Curcuma') return <TurmericIcon size={pixelSize} />;
+  if (item.fr === 'Cannelle') return <CinnamonIcon size={pixelSize} />;
+  if (item.fr === 'Cardamome') return <CardamomIcon size={pixelSize} />;
+  return <span className={size === 'lg' ? 'text-4xl' : 'text-3xl leading-none'}>{item.emoji}</span>;
+}
+
 const LEVELS: { title: Bi2; items: Item[]; wants: { id: string; clue: Bi2 }[] }[] = [
   { title: bi('Vegetable & Pulse Stall', 'सब्ज़ी व दाल स्टॉल'),
     items: [
@@ -144,10 +245,10 @@ export default function MarketSim() {
                   return (
                     <DragChip key={it.id} id={it.id} onDrop={drop} disabled={inB}>
                       <button onClick={() => setSeen(it.id)} data-item={it.id}
-                        className={`w-full rounded-xl border-2 p-2 text-center transition-all ${seen === it.id ? 'scale-105 ring-2 ring-blue-500' : ''}`}
+                        className={`w-full rounded-xl border-2 p-2 text-center transition-all ${seen === it.id ? 'scale-105 ring-2 ring-blue-500 shadow-sm' : ''}`}
                         style={{ background: it.tint, borderColor: seen === it.id ? T.accent : 'rgba(0,0,0,.08)', opacity: inB ? 0.35 : 1 }}>
-                        <div className="text-3xl leading-none">{it.emoji}</div>
-                        <div className="text-[10px] mt-1 font-semibold text-stone-700">{seen === it.id || inB ? L(it.en, it.hi) : L('Tap to inspect', 'जाँचने हेतु छुएँ')}</div>
+                        <div className="h-10 flex items-center justify-center"><ItemVisual item={it} size="sm" /></div>
+                        <div className="text-[10px] mt-1 font-semibold text-stone-700 truncate">{seen === it.id || inB ? L(it.en, it.hi) : L('Tap to inspect', 'जाँचने हेतु छुएँ')}</div>
                       </button>
                     </DragChip>
                   );
@@ -162,7 +263,9 @@ export default function MarketSim() {
                 <Card className="space-y-3">
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex items-center gap-3">
-                      <span className="text-4xl">{item.emoji}</span>
+                      <div className="w-14 h-14 rounded-2xl bg-amber-50/80 border border-amber-200/60 flex items-center justify-center flex-shrink-0 shadow-2xs">
+                        <ItemVisual item={item} size="lg" />
+                      </div>
                       <div>
                         <p className="font-bold text-sm sm:text-base">{L(item.en, item.hi)}</p>
                         <p className="text-xs text-stone-500">{L('French', 'फ़्रांसीसी')}: <b>{item.fr}</b> · {L('Texture', 'बनावट')}: <b>{L(item.texture.en, item.texture.hi)}</b></p>

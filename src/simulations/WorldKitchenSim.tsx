@@ -23,13 +23,13 @@ const COURSE_I = [
   mi('b1', 'bread', '🫓', bi('Phulka roti', 'फुलका रोटी'), bi('A thin whole-wheat flat bread that puffs on the flame.', 'आँच पर फूलने वाली पतली गेहूँ की रोटी।')),
   mi('b2', 'bread', '🥖', bi('Butter naan', 'बटर नान'), bi('A leavened bread baked in the tandoor.', 'तंदूर में सिंकी खमीरी रोटी।')),
 ];
-const REG_Z = [mz('pun', '🌾', bi('Punjab', 'पंजाब')), mz('guj', '🟨', bi('Gujarat', 'गुजरात')), mz('south', '🥥', bi('South India', 'दक्षिण भारत')), mz('ben', '🐟', bi('Bengal', 'बंगाल')), mz('fest', '🎉', bi('Festive & Royal', 'त्योहार व शाही'))];
+const REG_Z = [mz('pun', '🌾', bi('Punjab', 'पंजाब')), mz('guj', '🥘', bi('Gujarat', 'गुजरात')), mz('south', '🥥', bi('South India', 'दक्षिण भारत')), mz('ben', '🐟', bi('Bengal', 'बंगाल')), mz('fest', '🎉', bi('Festive & Royal', 'त्योहार व शाही'))];
 const REG_I = [
   mi('p1', 'pun', '🥬', bi('Sarson da saag', 'सरसों का साग'), bi('A winter mustard-greens dish of Punjab.', 'पंजाब का सर्दियों का सरसों साग।')),
   mi('p2', 'pun', '🫓', bi('Makki di roti', 'मक्की की रोटी'), bi('Maize flat bread served with saag in Punjab.', 'पंजाब में साग संग परोसी मक्के की रोटी।')),
-  mi('g1', 'guj', '🟨', bi('Dhokla', 'ढोकला'), bi('Steamed fermented gram-flour cake of Gujarat.', 'गुजरात का भाप में पका किण्वित बेसन केक।')),
+  mi('g1', 'guj', '🟡', bi('Dhokla', 'ढोकला'), bi('Steamed fermented gram-flour cake of Gujarat.', 'गुजरात का भाप में पका किण्वित बेसन केक।')),
   mi('g2', 'guj', '🫓', bi('Thepla', 'थेपला'), bi('Spiced fenugreek flat bread of Gujarat.', 'गुजरात की मेथी वाली मसालेदार रोटी।')),
-  mi('s1', 'south', '⚪', bi('Idli with sambar', 'इडली सांभर'), bi('Steamed rice-lentil cakes of South India.', 'दक्षिण भारत के भाप में पके चावल-दाल केक।')),
+  mi('s1', 'south', '🥞', bi('Idli with sambar', 'इडली सांभर'), bi('Steamed rice-lentil cakes of South India.', 'दक्षिण भारत के भाप में पके चावल-दाल केक।')),
   mi('s2', 'south', '🥞', bi('Masala dosa', 'मसाला डोसा'), bi('Crisp fermented crepe with potato filling.', 'आलू भरावन वाला कुरकुरा किण्वित क्रेप।')),
   mi('b1', 'ben', '🐟', bi('Machher jhol', 'माछेर झोल'), bi('Light Bengali fish curry.', 'हल्की बंगाली मछली करी।')),
   mi('b2', 'ben', '🍡', bi('Rasgulla', 'रसगुल्ला'), bi('Spongy chhena balls in syrup, a Bengal sweet.', 'शीरे में स्पंजी छेना गोले, बंगाल की मिठाई।')),

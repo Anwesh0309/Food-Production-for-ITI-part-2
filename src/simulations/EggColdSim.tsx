@@ -316,7 +316,7 @@ const ING: { id: string; e: string; n: Bi2 }[] = [
   { id: 'apple', e: '🍎', n: bi('Apple', 'सेब') }, { id: 'celery', e: '🥬', n: bi('Celery', 'अजवाइन-डंडी') }, { id: 'walnut', e: '🌰', n: bi('Walnuts', 'अखरोट') }, { id: 'mayo', e: '🥣', n: bi('Mayonnaise', 'मेयोनेज़') },
   { id: 'tomato', e: '🍅', n: bi('Tomato', 'टमाटर') }, { id: 'cucumber', e: '🥒', n: bi('Cucumber', 'खीरा') }, { id: 'olive', e: '🫒', n: bi('Olives', 'जैतून') }, { id: 'feta', e: '🧀', n: bi('Feta cheese', 'फ़ेटा चीज़') },
   { id: 'onion', e: '🧅', n: bi('Onion', 'प्याज़') }, { id: 'oil', e: '🫗', n: bi('Olive oil dressing', 'ऑलिव ऑयल ड्रेसिंग') }, { id: 'romaine', e: '🥗', n: bi('Romaine lettuce', 'रोमेन लेट्यूस') }, { id: 'crouton', e: '🍞', n: bi('Croutons', 'क्राउटन') },
-  { id: 'parmesan', e: '🧀', n: bi('Parmesan', 'पार्मेज़ान') }, { id: 'caesar', e: '🥫', n: bi('Caesar dressing', 'सीज़र ड्रेसिंग') }, { id: 'prawn', e: '🦐', n: bi('Prawns', 'झींगा') }, { id: 'beet', e: '🟣', n: bi('Beetroot', 'चुकंदर') },
+  { id: 'parmesan', e: '🧀', n: bi('Parmesan', 'पार्मेज़ान') }, { id: 'caesar', e: '🥫', n: bi('Caesar dressing', 'सीज़र ड्रेसिंग') }, { id: 'prawn', e: '🦐', n: bi('Prawns', 'झींगा') }, { id: 'beet', e: '🥗', n: bi('Beetroot', 'चुकंदर') },
 ];
 
 function Salad({ run, onDone }: { run: Run; onDone: () => void }) {
@@ -511,7 +511,7 @@ const CHI: MatchItem[] = [
 const PZ: MatchZone[] = ['long', 'short', 'stuffed', 'sheet'].map((id) => ({ id, emoji: '🍝', label: { long: bi('Long', 'लंबा'), short: bi('Short / tubes', 'छोटा / नली'), stuffed: bi('Stuffed', 'भरा हुआ'), sheet: bi('Sheets', 'चादर') }[id]! }));
 const PI: MatchItem[] = [
   { id: 'p1', cat: 'long', emoji: '🍝', label: bi('Spaghetti', 'स्पैघेटी') }, { id: 'p2', cat: 'long', emoji: '🍝', label: bi('Fettuccine', 'फ़ेतुचीनी') }, { id: 'p3', cat: 'short', emoji: '🍝', label: bi('Penne', 'पेने') }, { id: 'p4', cat: 'short', emoji: '🌀', label: bi('Fusilli', 'फ़ुसिल्ली') },
-  { id: 'p5', cat: 'stuffed', emoji: '🥟', label: bi('Ravioli', 'रैवियोली') }, { id: 'p6', cat: 'stuffed', emoji: '🥟', label: bi('Tortellini', 'तोर्तेलिनी') }, { id: 'p7', cat: 'sheet', emoji: '🟨', label: bi('Lasagne', 'लज़ानिया') }, { id: 'p8', cat: 'short', emoji: '🍝', label: bi('Macaroni', 'मैकरोनी') },
+  { id: 'p5', cat: 'stuffed', emoji: '🥟', label: bi('Ravioli', 'रैवियोली') }, { id: 'p6', cat: 'stuffed', emoji: '🥟', label: bi('Tortellini', 'तोर्तेलिनी') }, { id: 'p7', cat: 'sheet', emoji: '🍝', label: bi('Lasagne', 'लज़ानिया') }, { id: 'p8', cat: 'short', emoji: '🍝', label: bi('Macaroni', 'मैकरोनी') },
 ].map((x) => ({ ...x, why: bi({ long: 'Long strands suit light oil or tomato sauces.', short: 'Short shapes hold chunky sauces.', stuffed: 'Stuffed pasta has a filling inside.', sheet: 'Sheets are layered and baked.' }[x.cat]!, { long: 'लंबी लड़ियाँ हल्के तेल/टमाटर सॉस हेतु।', short: 'छोटे आकार गाढ़े सॉस पकड़ते हैं।', stuffed: 'भरे पास्ता में भीतर भरावन होता है।', sheet: 'चादरें परत लगाकर बेक की जाती हैं।' }[x.cat]!) }));
 
 function CheesePasta({ run, onDone }: { run: Run; onDone: () => void }) {

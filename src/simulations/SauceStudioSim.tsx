@@ -205,7 +205,7 @@ const NATZ: MatchZone[] = ['india', 'italy', 'russia', 'france'].map((id) => ({ 
 const NATI: MatchItem[] = [
   { id: 'mull', cat: 'india', emoji: '🍛', label: bi('Mulligatawny', 'मुलिगटॉनी'), why: bi('Mulligatawny is a spiced Indian-origin lentil soup.', 'मुलिगटॉनी भारतीय मूल का मसालेदार दाल सूप है।') },
   { id: 'mine', cat: 'italy', emoji: '🥬', label: bi('Minestrone', 'मिनेस्त्रोन'), why: bi('Minestrone is Italy’s thick vegetable-and-pasta soup.', 'मिनेस्त्रोन इटली का सब्ज़ी-पास्ता वाला गाढ़ा सूप है।') },
-  { id: 'bor', cat: 'russia', emoji: '🟣', label: bi('Borscht (beetroot)', 'बोर्श्च (चुकंदर)'), why: bi('Borscht is a beetroot soup from Russia/Eastern Europe.', 'बोर्श्च रूस/पूर्वी यूरोप का चुकंदर सूप है।') },
+  { id: 'bor', cat: 'russia', emoji: '🥣', label: bi('Borscht (beetroot)', 'बोर्श्च (चुकंदर)'), why: bi('Borscht is a beetroot soup from Russia/Eastern Europe.', 'बोर्श्च रूस/पूर्वी यूरोप का चुकंदर सूप है।') },
   { id: 'fos', cat: 'france', emoji: '🧅', label: bi('French onion soup', 'फ़्रेंच ऑनियन सूप'), why: bi('French onion soup is topped with bread and melted cheese.', 'फ़्रेंच ऑनियन सूप पर ब्रेड व पिघला चीज़ होता है।') },
 ];
 

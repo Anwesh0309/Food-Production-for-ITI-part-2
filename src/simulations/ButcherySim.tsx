@@ -99,9 +99,9 @@ const LAMB_I = [
 ];
 const CH_Z = [mz('breast', '🍗', bi('Breast', 'ब्रेस्ट')), mz('thigh', '🍗', bi('Thigh', 'जाँघ')), mz('drum', '🍗', bi('Drumstick', 'ड्रमस्टिक')), mz('wing', '🪽', bi('Wing', 'विंग'))];
 const CH_I = [
-  mi('c1', 'breast', '🤍', bi('Lean white meat; dries out if overcooked', 'दुबला सफ़ेद मांस; ज़्यादा पकने पर सूखता है'), bi('Breast is lean and cooks fast.', 'ब्रेस्ट दुबला है और जल्दी पकता है।')),
+  mi('c1', 'breast', '🥩', bi('Lean white meat; dries out if overcooked', 'दुबला सफ़ेद मांस; ज़्यादा पकने पर सूखता है'), bi('Breast is lean and cooks fast.', 'ब्रेस्ट दुबला है और जल्दी पकता है।')),
   mi('c2', 'breast', '⚡', bi('Cooks fast — grill or sauté', 'जल्दी पकता है — ग्रिल/सॉते'), bi('Breast suits quick dry-heat cooking.', 'ब्रेस्ट तेज़ शुष्क-ताप पकाई हेतु उपयुक्त।')),
-  mi('c3', 'thigh', '🟤', bi('Darker, juicier, forgiving in curries', 'गहरा, रसीला, करी में सुरक्षित'), bi('Thigh has more fat and stays juicy.', 'जाँघ में वसा अधिक, रसीली रहती है।')),
+  mi('c3', 'thigh', '🍗', bi('Darker, juicier, forgiving in curries', 'गहरा, रसीला, करी में सुरक्षित'), bi('Thigh has more fat and stays juicy.', 'जाँघ में वसा अधिक, रसीली रहती है।')),
   mi('c4', 'thigh', '🍛', bi('Boneless pieces for tikka', 'टिक्का हेतु बोनलेस टुकड़े'), bi('Boneless thigh is popular for tikka.', 'बोनलेस जाँघ टिक्का हेतु लोकप्रिय है।')),
   mi('c5', 'drum', '🦴', bi('Lower leg with a bone handle', 'हड्डी की मूठ वाली निचली टाँग'), bi('The drumstick is the lower leg.', 'ड्रमस्टिक निचली टाँग है।')),
   mi('c6', 'drum', '🔥', bi('Tandoori or fried with the bone in', 'हड्डी सहित तंदूरी या तला'), bi('Drumsticks are great tandoori or fried.', 'ड्रमस्टिक तंदूरी/तली अच्छी बनती है।')),

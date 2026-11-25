@@ -65,13 +65,3 @@ export const useStore = create<State>()(
     },
   ),
 );
-
-// Ensure every fresh learning session starts in Hindi by default
-if (typeof window !== 'undefined') {
-  try {
-    if (!sessionStorage.getItem('food2_session_active')) {
-      sessionStorage.setItem('food2_session_active', '1');
-      useStore.setState({ language: 'hi' });
-    }
-  } catch {}
-}
