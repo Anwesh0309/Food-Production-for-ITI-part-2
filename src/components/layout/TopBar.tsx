@@ -60,7 +60,7 @@ export default function TopBar() {
         </span>
 
         <div className="inline-flex flex-shrink-0 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden text-xs font-bold shadow-2xs" role="group" aria-label={t.nav.language}>
-          {(['en', 'hi'] as const).map((l) => (
+          {(['hi', 'en'] as const).map((l) => (
             <button
               key={l}
               data-lang={l}

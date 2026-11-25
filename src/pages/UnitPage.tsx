@@ -17,7 +17,7 @@ import {
 
 export default function UnitPage() {
   const { id } = useParams<{ id: string }>();
-  const { language, addXP, completeLesson, completedLessons, labAttempts } = useStore();
+  const { language, setLanguage, addXP, completeLesson, completedLessons, labAttempts } = useStore();
   const t = useDict();
   const [stage, setStage] = useState(0);
   const hi = language === 'hi';
@@ -38,6 +38,7 @@ export default function UnitPage() {
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
+    setLanguage('hi');
     setStage(0);
     setStep(0);
     setPlaying(false);
@@ -45,7 +46,7 @@ export default function UnitPage() {
     setQa({});
     setQs(false);
     setSa({});
-  }, [unitId]);
+  }, [unitId, setLanguage]);
 
   useEffect(() => {
     if (!unit) return;

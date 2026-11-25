@@ -31,7 +31,7 @@ const isDesktop = () => typeof window !== 'undefined' && window.matchMedia('(min
 export const useStore = create<State>()(
   persist(
     (set) => ({
-      language: 'en',
+      language: 'hi', // Default language is strictly Hindi across all pages and modules
       theme: 'light',
       sidebarOpen: isDesktop(),
       xp: 0,
@@ -46,11 +46,32 @@ export const useStore = create<State>()(
       addXP: (n) => set((s) => ({ xp: s.xp + n })),
       completeLesson: (id) => set((s) => (s.completedLessons.includes(id) ? s : { completedLessons: [...s.completedLessons, id] })),
       addLabAttempt: (a) => set((s) => ({ labAttempts: [...s.labAttempts, a] })),
-      resetProgress: () => set({ xp: 0, completedLessons: [], labAttempts: [] }),
+      resetProgress: () => set({ xp: 0, completedLessons: [], labAttempts: [], language: 'hi' }),
     }),
     {
       name: 'foodproduction-module2-storage',
+      version: 2,
+      migrate: (persistedState: any, version: number) => {
+        // Automatically migrate language to default Hindi on upgrade
+        if (!version || version < 2) {
+          return {
+            ...persistedState,
+            language: 'hi',
+          };
+        }
+        return persistedState;
+      },
       partialize: (s) => ({ language: s.language, theme: s.theme, xp: s.xp, completedLessons: s.completedLessons, labAttempts: s.labAttempts, soundEnabled: s.soundEnabled }),
     },
   ),
 );
+
+// Ensure every fresh learning session starts in Hindi by default
+if (typeof window !== 'undefined') {
+  try {
+    if (!sessionStorage.getItem('food2_session_active')) {
+      sessionStorage.setItem('food2_session_active', '1');
+      useStore.setState({ language: 'hi' });
+    }
+  } catch {}
+}
